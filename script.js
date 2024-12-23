@@ -20,7 +20,7 @@ SportsCar.prototype = Object.create(Car.prototype);
 SportsCar.prototype.constructor = SportsCar;
 
 SportsCar.prototype.getTopSpeed = function () {
-  return `${this.make} ${this.model} has a top speed of ${this.topSpeed} mph.`;
+  return this.topSpeed;
 };
 
 // Do not change the code below
